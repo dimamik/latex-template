@@ -17,7 +17,7 @@
 \usepackage[hidelinks,linktoc=all]{hyperref}
 \usepackage{hyperref}
 \usepackage{amsmath}
-
+\usepackage{subfig}
 
 % listings definition
 \definecolor{dkgreen}{rgb}{0,0.6,0}
@@ -66,7 +66,7 @@
 \begin{document}
 
 % Headings
-\title{Internet Rzeczy}
+\title{Subject name}
 \author{
   \textit{AGH, Wydzial Informatyki Elektroniki i Telekomunikacji} \\ \\
   \textbf{Imię Nazwisko}\\
@@ -85,6 +85,15 @@ Make a cite \cite{sceta}
 % Insert images
 \begin{centerfig}
   \includegraphics[width=\textwidth]{1.png}
+\end{centerfig}
+
+% Insert two images
+\begin{centerfig}
+  \subfloat[\centering label 1]{{\includegraphics[width=5cm]{1.png} }}%
+  \qquad
+  \subfloat[\centering label 2]{{\includegraphics[width=5cm]{1.png} }}%
+  \caption{2 Figures side by side}%
+  \label{fig:example}
 \end{centerfig}
 
 % Insert code
